@@ -4,48 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catboy Land | Welcome to Hell</title>
-    <script src="index.js" defer="true"></script>
-    <style>
-        html {
-            background-color: rgb(230, 150, 230);
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            
-        }
-        #catboyList {
-            background-color: rgb(241, 241, 241);
-            font-size:30px;
-            margin-top: 325px;
-            list-style: none;
-            display:inline-flex;
-        }
-        body {      
-            text-align: center;
-        }   
-        h1 {
-            font-size: 90px;
-        }
-        #userInputField{
-            position: fixed;
-            margin: auto;
-            width: 100%;
-            resize: none;
-            min-width: 1052px;
-        }
-        button{
-            border-radius: 50px;
-        }
-    </style>
+    <title>Homepage</title>
+    <link href="index.css">
+    <script src="index.js"></script>
 </head>
 <body>
-    <div id="userInputField">
-        <h1>There is no turning back.</h1>
-        <h2>Please select a small number (1-10). (Rate limit of 5000/day)</h2>
-        <div>
-            <input type="number" id="numInput" name="numInput"  >
-            <button onclick="generateImage()">Click to generate the picture(s)!</button>
-        </div>
-    </div>
-    <ul id="catboyList"></ul>
+    <h1>Homepage</h1>
+    <button onclick="switchSite('apod')">Astronaut Picture of the Day</button>
+    <button onclick="switchSite('catboy')">Catboy</button>
+    <button onclick="switchSite('boredAPI')">Bored?</button>
 </body>
 </html>

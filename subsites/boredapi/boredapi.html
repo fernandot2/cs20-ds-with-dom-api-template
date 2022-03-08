@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Something to do</title>
+    <script src="boredapi.js" defer="true" type="text/javascript"></script>
+    <style>
+        html {
+            display:inline-flexbox;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body {
+            font-size: 40px;
+            text-align: center;
+        }
+        #typeSelection {
+            font-size: 20px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Background Color:</p>
+        <input type="color" id="bgColorPicker">
+        <button onclick="bgColorChanger()">Apply Change</button>
+    </div>
+    <div>
+        <select id="typeSelection">
+            <option value="education">education</option>
+            <option value="recreational">recreational</option>
+            <option value="social">social</option>
+            <option value="diy">diy</option>
+            <option value="charity">charity</option>
+            <option value="cooking">cooking</option>
+            <option value="relaxation">relaxation</option>
+            <option value="music">music</option>
+            <option value="busywork">busywork</option>
+        </select>
+        <button onclick="boredAPI()">GET!</button>
+    </div>
+    <h1 id="activityResponse"> </h1>
+    <h2 id="priceOfActivity"> </h2>
+</body>
+</html>
