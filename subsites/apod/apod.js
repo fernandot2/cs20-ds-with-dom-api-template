@@ -26,4 +26,17 @@ async function dateSelect(){
         document.getElementById("videoOfDay").src = dateJson.url;
     }
     
+}function switchSite(site){
+    switch(site) {
+        case "home":
+            location.href= "/";
+            break;
+        case "boredAPI":
+            location.replace("/subsites/boredapi/boredapi.html");
+            break;
+        case "catboy":
+            location.replace("/subsites/catboy/catboy.html");
+            break;
+    }
+    
 }

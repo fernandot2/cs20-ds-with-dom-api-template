@@ -38,3 +38,18 @@ async function fetchImage(){
     let catboyImage = await fetchImage.json();
     addImage(catboyImage.url, catboyImage.artist, catboyImage.artist_url);      
 }
+
+function switchSite(site){
+    switch(site) {
+        case "home":
+            location.replace("/");
+            break;
+        case "boredAPI":
+            location.href= "/subsites/boredapi/boredapi.html";
+            break;
+        case "apod":
+            location.replace("/subsites/apod/apod.html");
+            break;
+    }
+    
+}

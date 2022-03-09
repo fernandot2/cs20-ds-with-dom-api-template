@@ -11,18 +11,29 @@
             background-color: rgb(139, 144, 156);
         }
         body {
+            margin-top: 30px;
             text-align: center;
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 20px;
         }
         h1 {
             font-size: 60px;
+            margin-top: 20px;
+        }
+        button{
+            border-radius: 50px;
+            font-size: 30px;
         }
     </style>
 </head>
 <body>
+    <div>
+        <button onclick="switchSite('home')">home</button>
+        <button onclick="switchSite('catboy')">Catboy</button>
+        <button onclick="switchSite('boredAPI')">Bored?</button>
+    </div>
     <h1 id="title">Nasa's Picture of the day</h1>
-    <img id="picOfDay" height="650px">
+    <img id="picOfDay" height="600px">
     <iframe id="videoOfDay" width="900" height="650" hidden="true"></iframe>
     <div>
         <h2>Select a different date</h2>

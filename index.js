@@ -1,7 +1,7 @@
 function switchSite(site){
     switch(site) {
         case "boredAPI":
-            location.replace("/subsites/boredapi/boredapi.html");
+            location.href= "/subsites/boredapi/boredapi.html";
             break;
         case "apod":
             location.replace("/subsites/apod/apod.html");

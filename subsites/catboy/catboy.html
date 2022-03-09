@@ -21,6 +21,7 @@
         }
         body {      
             text-align: center;
+            margin-top: 30px;
         }   
         h1 {
             font-size: 90px;
@@ -34,10 +35,16 @@
         }
         button{
             border-radius: 50px;
+            font-size: 30px;
         }
     </style>
 </head>
 <body>
+    <div>
+        <button onclick="switchSite('home')">Homepage</button>
+        <button onclick="switchSite('apod')">Astronaut Picture of the Day</button>
+        <button onclick="switchSite('boredAPI')">Bored?</button>
+    </div>
     <div id="userInputField">
         <h1>There is no turning back.</h1>
         <h2>Please select a small number (1-10). (Rate limit of 5000/day)</h2>

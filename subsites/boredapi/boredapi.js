@@ -1,7 +1,7 @@
 // Changes the background color of the body element using the bgColorPicker color input | Turns the text color to white if the light level (found using HEXLight) is <= 75
 function bgColorChanger(){
     let bgColor = document.getElementById("bgColorPicker").value;
-    document.body.style.backgroundColor = bgColor;
+    document.getElementById("html").style.backgroundColor = bgColor;
 
     let light = HEXLight(bgColor);
     if(light <= 75){
@@ -38,4 +38,19 @@ async function boredAPI(){
 
     let h2 = document.getElementById("priceOfActivity");
     h2.innerHTML = `Price (lower = cheaper): ${activity.price*10}`;
+}
+
+function switchSite(site){
+    switch(site) {
+        case "home":
+            location.href= "/";
+            break;
+        case "apod":
+            location.replace("/subsites/apod/apod.html");
+            break;
+        case "catboy":
+            location.replace("/subsites/catboy/catboy.html");
+            break;
+    }
+    
 }
