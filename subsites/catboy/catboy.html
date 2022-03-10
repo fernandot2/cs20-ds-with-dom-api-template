@@ -24,6 +24,7 @@
             margin-top: 30px;
         }   
         h1 {
+            margin-top: 40px;
             font-size: 90px;
         }
         #userInputField{
@@ -37,10 +38,25 @@
             border-radius: 50px;
             font-size: 30px;
         }
+        input {
+            font-size:30px;
+        }
+        #pages {
+            position: fixed;
+            margin: auto;
+            width: 100%;
+            resize: none;
+            min-width: 1052px;
+            z-index: 1;
+        }
+        #warning {
+            font-weight: bolder;
+            font-size: 30px;
+        }
     </style>
 </head>
 <body>
-    <div>
+    <div id="pages">
         <button onclick="switchSite('home')">Homepage</button>
         <button onclick="switchSite('apod')">Astronaut Picture of the Day</button>
         <button onclick="switchSite('boredAPI')">Bored?</button>
@@ -54,5 +70,6 @@
         </div>
     </div>
     <ul id="catboyList"></ul>
+    <p id="warning">Warning! API stupid and may not give all images</p>
 </body>
 </html>

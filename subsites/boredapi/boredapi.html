@@ -25,14 +25,22 @@
             border-radius: 50px;
             font-size: 30px;
         }
+        #pages {
+            position: fixed;
+            margin: auto;
+            width: 100%;
+            resize: none;
+            min-width: 1052px;
+        }
     </style>
 </head>
 <body>
-    <div>
+    <div id="pages">
         <button onclick="switchSite('home')">Homepage</button>
         <button onclick="switchSite('apod')">Astronaut Picture of the Day</button>
         <button onclick="switchSite('catboy')">Catboy</button>
     </div>
+    <br>
     <div>
         <p>Background Color:</p>
         <input type="color" id="bgColorPicker">

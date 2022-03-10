@@ -43,13 +43,13 @@ async function boredAPI(){
 function switchSite(site){
     switch(site) {
         case "home":
-            location.href= "/";
+            window.location.href = ("../../index.html");
             break;
         case "apod":
-            location.replace("/subsites/apod/apod.html");
+            window.location.href = ("../apod/apod.html");
             break;
         case "catboy":
-            location.replace("/subsites/catboy/catboy.html");
+            window.location.href = ("../catboy/catboy.html");
             break;
     }
     

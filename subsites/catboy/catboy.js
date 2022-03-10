@@ -3,7 +3,7 @@ function addImage(src, artist, credit){
     let image = document.createElement("img");
     image.src = src;
     image.alt = "catboy";
-    image.width = 500;
+    image.width = 400;
     image.height = image.width;
 
     //Checks to see if there is an artist then credits them.
@@ -29,8 +29,8 @@ async function generateImage(){
         numOfImages = numInput;
     }
     for(let i = 0; i < numOfImages; i++){
-        setTimeout(fetchImage, 1000);    
-    }
+        setTimeout(fetchImage, 1000);      
+    }   
 }   
 
 async function fetchImage(){
@@ -42,13 +42,13 @@ async function fetchImage(){
 function switchSite(site){
     switch(site) {
         case "home":
-            location.replace("/");
+            window.location.href = ("../../index.html");
             break;
         case "boredAPI":
-            location.href= "/subsites/boredapi/boredapi.html";
+            window.location.href = ("../boredapi/boredapi.html");
             break;
         case "apod":
-            location.replace("/subsites/apod/apod.html");
+            window.location.href = ("../apod/apod.html");
             break;
     }
     

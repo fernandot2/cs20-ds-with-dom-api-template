@@ -29,13 +29,13 @@ async function dateSelect(){
 }function switchSite(site){
     switch(site) {
         case "home":
-            location.href= "/";
+            window.location.href = ("../../index.html");
             break;
         case "boredAPI":
-            location.replace("/subsites/boredapi/boredapi.html");
+            window.location.href = ("../boredapi/boredapi.html");
             break;
         case "catboy":
-            location.replace("/subsites/catboy/catboy.html");
+            window.location.href = ("../catboy/catboy.html");
             break;
     }
     
